@@ -1,0 +1,11 @@
+{
+  "name": "VidList Repo",
+  "apps": [
+    {
+      "name": "VidList",
+      "bundleID": "com.vidlist.app",
+      "version": "2.1.1",
+      "ipa": "https://vidlist.pw/files/VidList_2.1.1.ipa"
+    }
+  ]
+}
