@@ -1,10 +1,5 @@
 {
   "name": "VidList Repo",
-  "identifier": "aio.yippee.rip",
-  "sourceURL": "https://aio.yippee.rip",
-  "iconURL": "https://vidlist.pw/vlpreview.png",
-  "website": "t.me/+W1lB7R1VC0hjM2Ri",
-  "subtitle": "artofconsole",
   "apps": [
     {
       "name": "VidList",
