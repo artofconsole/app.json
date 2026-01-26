@@ -1,0 +1,11 @@
+{
+  "name": "VidList Repo",
+  "apps": [
+    {
+      "name": "VidList",
+      "bundleID": "com.vidlist.app",
+      "version": "2.1.1",
+      "ipa": "https://drive.google.com/uc?export=download&id=19T6SP2lb5zoIUIPcZr6OoafKZcppjobM"
+    }
+  ]
+}
