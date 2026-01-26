@@ -1,0 +1,10 @@
+{
+  "name": "VidList Repo",
+  "apps": [
+    {
+      "name": "VidList",
+      "version": "2.1.1",
+      "downloadURL": "https://github.com/artofconsole/app.json/raw/refs/heads/main/VidList_2.1.1.ipa"
+    }
+  ]
+}
