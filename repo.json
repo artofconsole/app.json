@@ -16,11 +16,11 @@
   ]
 },
     {
-      "name": "VidList",
-      "bundleIdentifier": "com.vidlist.app",
-      "developerName": "AppCore",
+      "name": "GetContact",
+      "bundleIdentifier": "com.kontakt.getcontact",
+      "developerName": "ArtOfConsole",
       "iconURL": "https://vidlist.pw/vlpreview.png",
-      "version": "2.1.1",
+      "version": "7.2.0",
       "size": 20.55,
       "downloadURL": "https://file.ipaomtk.com/ipa/Getcontact.ipa",
       "subtitle": "t.me/+W1lB7R1VC0hjM2Ri",
@@ -29,4 +29,3 @@
     }
   ]
 }
-
