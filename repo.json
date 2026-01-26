@@ -14,4 +14,19 @@
       "versionDate": "2025-02-21"
     }
   ]
+},
+    {
+      "name": "VidList",
+      "bundleIdentifier": "com.vidlist.app",
+      "developerName": "AppCore",
+      "iconURL": "https://vidlist.pw/vlpreview.png",
+      "version": "2.1.1",
+      "size": 20.55,
+      "downloadURL": "https://vidlist.pw/files/VidList_2.1.1.ipa",
+      "subtitle": "t.me/+W1lB7R1VC0hjM2Ri",
+      "localizedDescription": "bu tamamen deneme amaçlıdr",
+      "versionDate": "2025-02-21"
+    }
+  ]
 }
+
