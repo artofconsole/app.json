@@ -1,22 +1,22 @@
 {
-  "name": "VidList Repo",\
-  "identifier": "aio.yippee.rip",\
-  "sourceURL": "https://aio.yippee.rip",\
-  "iconURL": "https://vidlist.pw/vlpreview.png",\
-  "website": "t.me/+W1lB7R1VC0hjM2Ri",\
-  "subtitle": "artofconsole",\
-  "apps": [\
-    \{\
-      "name": "VidList",\
-      "bundleIdentifier": "com.vidlist.app",\
-      "developerName": "AppCore",\
-      "iconURL": "https://vidlist.pw/vlpreview.png",\
-      "version": "2.1.1",\
-      "size": 20.55,\
-      "downloadURL": "https://vidlist.pw/files/VidList_2.1.1.ipa",\
-      "subtitle": "t.me/+W1lB7R1VC0hjM2Ri",\
-      "localizedDescription": "bu tamamen deneme ama\'e7l\uc0\u305 dr",\
-      "versionDate": "2025-02- 
+  "name": "VidList Repo",
+  "identifier": "aio.yippee.rip",
+  "sourceURL": "https://aio.yippee.rip",
+  "iconURL": "https://vidlist.pw/vlpreview.png",
+  "website": "t.me/+W1lB7R1VC0hjM2Ri",
+  "subtitle": "artofconsole",
+  "apps": [
+    {
+      "name": "VidList",
+      "bundleIdentifier": "com.vidlist.app",
+      "developerName": "AppCore",
+      "iconURL": "https://vidlist.pw/vlpreview.png",
+      "version": "2.1.1",
+      "size": 20.55,
+      "downloadURL": "https://vidlist.pw/files/VidList_2.1.1.ipa",
+      "subtitle": "t.me/+W1lB7R1VC0hjM2Ri",
+      "localizedDescription": "bu tamamen deneme amaçlıdr",
+      "versionDate": "2025-02-21"
     }
   ]
 }
