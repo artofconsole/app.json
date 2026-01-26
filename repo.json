@@ -1,0 +1,11 @@
+{
+  "name": "VidList Repo",
+  "apps": [
+    {
+      "name": "VidList",
+      "bundleID": "VidList",
+      "version": "2.1.1",
+      "ipa": "https://raw.githubusercontent.com/artofconsole/app.json/main/VidList_2.1.1.ipa"
+    }
+  ]
+}
