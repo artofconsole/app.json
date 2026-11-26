@@ -1,41 +1,24 @@
 [
   {
     "id": "1",
-    "title": "Big Buck Bunny",
-    "name": "Big Buck Bunny",
-    "url": "https://googleapis.com",
-    "videoUrl": "https://googleapis.com",
-    "video_url": "https://googleapis.com",
-    "src": "https://googleapis.com",
-    "link": "https://googleapis.com",
-    "streamUrl": "https://googleapis.com",
-    "thumbnail": "https://googleapis.com",
-    "thumbnailUrl": "https://googleapis.com"
+    "title": "Test Yayını 1 (Mux HLS)",
+    "name": "Test Yayını 1 (Mux HLS)",
+    "url": "https://mux.dev",
+    "videoUrl": "https://mux.dev",
+    "streamUrl": "https://mux.dev",
+    "src": "https://mux.dev",
+    "link": "https://mux.dev",
+    "hls": "https://mux.dev"
   },
   {
     "id": "2",
-    "title": "Sintel",
-    "name": "Sintel",
-    "url": "https://googleapis.com",
-    "videoUrl": "https://googleapis.com",
-    "video_url": "https://googleapis.com",
-    "src": "https://googleapis.com",
-    "link": "https://googleapis.com",
-    "streamUrl": "https://googleapis.com",
-    "thumbnail": "https://googleapis.com",
-    "thumbnailUrl": "https://googleapis.com"
-  },
-  {
-    "id": "3",
-    "title": "For Bigger Blazes",
-    "name": "For Bigger Blazes",
-    "url": "https://googleapis.com",
-    "videoUrl": "https://googleapis.com",
-    "video_url": "https://googleapis.com",
-    "src": "https://googleapis.com",
-    "link": "https://googleapis.com",
-    "streamUrl": "https://googleapis.com",
-    "thumbnail": "https://googleapis.com",
-    "thumbnailUrl": "https://googleapis.com"
+    "title": "Test Yayını 2 (Apple BipBop)",
+    "name": "Test Yayını 2 (Apple BipBop)",
+    "url": "https://apple.com",
+    "videoUrl": "https://apple.com",
+    "streamUrl": "https://apple.com",
+    "src": "https://apple.com",
+    "link": "https://apple.com",
+    "hls": "https://apple.com"
   }
 ]
