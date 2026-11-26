@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "title": "Test Yayını 1 (Mux HLS)",
+    "name": "Test Yayını 1 (Mux HLS)",
+    "url": "https://mux.dev",
+    "videoUrl": "https://mux.dev",
+    "video_url": "https://mux.dev",
+    "src": "https://mux.dev",
+    "link": "https://mux.dev",
+    "streamUrl": "https://mux.dev",
+    "thumbnail": "https://googleapis.com",
+    "thumbnailUrl": "https://googleapis.com"
+  },
+  {
+    "id": "2",
+    "title": "Test Yayını 2 (Apple HLS)",
+    "name": "Test Yayını 2 (Apple HLS)",
+    "url": "https://apple.com",
+    "videoUrl": "https://apple.com",
+    "video_url": "https://apple.com",
+    "src": "https://apple.com",
+    "link": "https://apple.com",
+    "streamUrl": "https://apple.com",
+    "thumbnail": "https://googleapis.com",
+    "thumbnailUrl": "https://googleapis.com"
+  }
+]
