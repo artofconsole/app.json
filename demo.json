@@ -1,50 +1,41 @@
-{
-  "playlistName": "Test Video Listesi",
-  "videos": [
-    {
-      "id": 1,
-      "title": "Big Buck Bunny (MP4 - HD)",
-      "description": "Açık kaynaklı animasyon filmi test videosu.",
-      "thumbnail": "https://wikimedia.org",
-      "url": "https://googleapis.com",
-      "type": "video/mp4",
-      "duration": "09:56"
-    },
-    {
-      "id": 2,
-      "title": "Sintel (MP4 - HD)",
-      "description": "Blender Foundation tarafından üretilen kısa animasyon.",
-      "thumbnail": "https://wikimedia.org",
-      "url": "https://googleapis.com",
-      "type": "video/mp4",
-      "duration": "14:48"
-    },
-    {
-      "id": 3,
-      "title": "Tears of Steel (MP4 - Bilim Kurgu)",
-      "description": "Görsel efekt testleri için kullanılan açık kaynak film.",
-      "thumbnail": "https://wikimedia.org",
-      "url": "https://googleapis.com",
-      "type": "video/mp4",
-      "duration": "12:14"
-    },
-    {
-      "id": 4,
-      "title": "For Bigger Blazes (Kısa Test Klibi)",
-      "description": "Hızlı yükleme ve geçiş testleri için 15 saniyelik klip.",
-      "thumbnail": "https://googleapis.com",
-      "url": "https://googleapis.com",
-      "type": "video/mp4",
-      "duration": "00:15"
-    },
-    {
-      "id": 5,
-      "title": "Apple HLS Test Akışı (M3U8)",
-      "description": "Oynatıcınızın m3u8 / adaptif yayın desteğini test etmek için.",
-      "thumbnail": "https://googleapis.com",
-      "url": "https://apple.com",
-      "type": "application/x-mpegURL",
-      "duration": "10:00"
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "title": "Big Buck Bunny",
+    "name": "Big Buck Bunny",
+    "url": "https://googleapis.com",
+    "videoUrl": "https://googleapis.com",
+    "video_url": "https://googleapis.com",
+    "src": "https://googleapis.com",
+    "link": "https://googleapis.com",
+    "streamUrl": "https://googleapis.com",
+    "thumbnail": "https://googleapis.com",
+    "thumbnailUrl": "https://googleapis.com"
+  },
+  {
+    "id": "2",
+    "title": "Sintel",
+    "name": "Sintel",
+    "url": "https://googleapis.com",
+    "videoUrl": "https://googleapis.com",
+    "video_url": "https://googleapis.com",
+    "src": "https://googleapis.com",
+    "link": "https://googleapis.com",
+    "streamUrl": "https://googleapis.com",
+    "thumbnail": "https://googleapis.com",
+    "thumbnailUrl": "https://googleapis.com"
+  },
+  {
+    "id": "3",
+    "title": "For Bigger Blazes",
+    "name": "For Bigger Blazes",
+    "url": "https://googleapis.com",
+    "videoUrl": "https://googleapis.com",
+    "video_url": "https://googleapis.com",
+    "src": "https://googleapis.com",
+    "link": "https://googleapis.com",
+    "streamUrl": "https://googleapis.com",
+    "thumbnail": "https://googleapis.com",
+    "thumbnailUrl": "https://googleapis.com"
+  }
+]
