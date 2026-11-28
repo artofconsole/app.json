@@ -1,0 +1,46 @@
+name: Zip Dosyasını Çıkar
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  extract-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu İndir
+        uses: actions/checkout@v4
+
+      - name: Zipi Ana Dizine Çıkar
+        run: |
+          ZIP_DOSYASI="h-z-nov-28-2026-10-39-37-am.zip"
+          
+          if [ ! -f "$ZIP_DOSYASI" ]; then
+            echo "Hata: $ZIP_DOSYASI ana dizinde bulunamadı!"
+            exit 1
+          fi
+
+          mkdir -p temp_extract
+          unzip -q "$ZIP_DOSYASI" -d temp_extract
+
+          # Zip içindeki .github klasörünü güvenlik kısıtlamasına takılmaması için sil
+          find temp_extract -name ".github" -type d -exec rm -rf {} +
+
+          # Eğer zip içinde her şey tek bir alt klasörde toplandıysa içeriğini doğrudan ana dizine alır
+          KLASOR_SAYISI=$(find temp_extract -mindepth 1 -maxdepth 1 | wc -l)
+          if [ "$KLASOR_SAYISI" -eq 1 ] && [ -d "$(find temp_extract -mindepth 1 -maxdepth 1)" ]; then
+            IC_KLASOR=$(find temp_extract -mindepth 1 -maxdepth 1)
+            cp -rn "$IC_KLASOR"/. .
+          else
+            cp -rn temp_extract/. .
+          fi
+
+          rm -rf temp_extract
+
+      - name: Değişiklikleri Kaydet ve Gönder
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Zip içeriği ana dizine çıkarıldı" || exit 0
+          git push
