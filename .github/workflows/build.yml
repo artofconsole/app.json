@@ -19,19 +19,40 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Android SDK Kurulumu
+        uses: android-actions/setup-android@v3
+
+      - name: Proje Yapısı ve Açılış Videosu Kontrolü
+        run: |
+          if [ ! -f "settings.gradle.kts" ] && [ ! -f "settings.gradle" ]; then
+            echo "HATA: Kök dizinde settings.gradle(.kts) bulunamadı."
+            exit 1
+          fi
+          if [ ! -f "app/src/main/res/raw/splash_lightning.mp4" ]; then
+            echo "UYARI: app/src/main/res/raw/splash_lightning.mp4 bulunamadı (fallback splash devreye girecek)."
+          fi
+
       - name: Gradle Kurulumu ve Önbellek
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Gradlew İzni Ver ve APK Oluştur
-        env:
-          JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+      - name: Gradlew Hazırla
         run: |
           if [ -f "./gradlew" ]; then
             chmod +x ./gradlew
-            ./gradlew :app:assembleDebug --no-daemon
           else
-            gradle :app:assembleDebug --no-daemon
+            gradle wrapper
+            chmod +x ./gradlew
           fi
+
+      - name: MirrorCoreTest Birim Testlerini Çalıştır
+        env:
+          JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+        run: ./gradlew :app:testDebugUnitTest --tests "*MirrorCoreTest*" --no-daemon --stacktrace
+
+      - name: Debug APK Oluştur
+        env:
+          JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
 
       - name: APK Dosyasını Yükle
         uses: actions/upload-artifact@v4
