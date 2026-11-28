@@ -19,8 +19,13 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Android SDK Kurulumu
-        uses: android-actions/setup-android@v3
+      - name: SDK Ortamını Doğrula
+        run: |
+          export ANDROID_SDK_ROOT="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          export ANDROID_HOME="$ANDROID_SDK_ROOT"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
+          yes | sdkmanager --licenses > /dev/null 2>&1 || true
 
       - name: Gradle Kurulumu ve Önbellek
         uses: gradle/actions/setup-gradle@v4
