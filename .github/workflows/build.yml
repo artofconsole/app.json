@@ -1,0 +1,40 @@
+name: Hız Android APK Build
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu İndir
+        uses: actions/checkout@v4
+
+      - name: Java 21 Kurulumu
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Gradle Kurulumu ve Önbellek
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Gradlew İzni Ver ve APK Oluştur
+        env:
+          JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+        run: |
+          if [ -f "./gradlew" ]; then
+            chmod +x ./gradlew
+            ./gradlew :app:assembleDebug --no-daemon
+          else
+            gradle :app:assembleDebug --no-daemon
+          fi
+
+      - name: APK Dosyasını Yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Hiz-APK
+          path: app/build/outputs/apk/debug/*.apk
