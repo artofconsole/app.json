@@ -1,0 +1,6 @@
+{
+  "name": "Hız",
+  "description": "Aynı yerel ağ (LAN) üzerinden çalışan özel Verici (Telefon) ve Alıcı (TV) ekran yansıtma uygulaması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
