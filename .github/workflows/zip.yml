@@ -13,7 +13,7 @@ jobs:
 
       - name: Zipi Ana Dizine Çıkar
         run: |
-          ZIP_DOSYASI="h-z-nov-28-2026-10-39-37-am.zip"
+          ZIP_DOSYASI="h-z-nov-28-2026-11-21-50-am.zip"
           
           if [ ! -f "$ZIP_DOSYASI" ]; then
             echo "Hata: $ZIP_DOSYASI ana dizinde bulunamadı!"
