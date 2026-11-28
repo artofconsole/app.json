@@ -1,7 +1,0 @@
-<resources>
-    <style name="Theme.HizMirror" parent="android:Theme.Material.NoActionBar">
-        <item name="android:windowBackground">@android:color/black</item>
-        <item name="android:statusBarColor">#090C11</item>
-        <item name="android:navigationBarColor">#090C11</item>
-    </style>
-</resources>

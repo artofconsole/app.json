@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Hız</string>
-    <string name="notification_channel_name">Hız Ekran Yansıtma</string>
-    <string name="notification_channel_desc">Yerel ağ ekran paylaşımı aktifken bildirim gösterir</string>
-    <string name="notification_mirroring_title">Hız Ekran Yansıtma Aktif</string>
-    <string name="notification_mirroring_text">Ekranınız yerel ağ (LAN) üzerinden aktarılıyor</string>
-    <string name="notification_action_stop">Durdur</string>
-</resources>
