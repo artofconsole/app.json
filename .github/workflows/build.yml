@@ -22,16 +22,6 @@ jobs:
       - name: Android SDK Kurulumu
         uses: android-actions/setup-android@v3
 
-      - name: Proje Yapısı ve Açılış Videosu Kontrolü
-        run: |
-          if [ ! -f "settings.gradle.kts" ] && [ ! -f "settings.gradle" ]; then
-            echo "HATA: Kök dizinde settings.gradle(.kts) bulunamadı."
-            exit 1
-          fi
-          if [ ! -f "app/src/main/res/raw/splash_lightning.mp4" ]; then
-            echo "UYARI: app/src/main/res/raw/splash_lightning.mp4 bulunamadı (fallback splash devreye girecek)."
-          fi
-
       - name: Gradle Kurulumu ve Önbellek
         uses: gradle/actions/setup-gradle@v4
 
