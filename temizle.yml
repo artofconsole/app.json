@@ -1,0 +1,21 @@
+name: Depoyu Temizle
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  clean-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu İndir
+        uses: actions/checkout@v4
+
+      - name: Dosyaları Sil ve Gönder
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name '.github' -exec rm -rf {} +
+          git add -A
+          git commit -m "Depo temizlendi (.github hariç)" || exit 0
+          git push
